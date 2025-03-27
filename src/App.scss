@@ -42,6 +42,11 @@ a:hover{
   --text-light: #00000072;
 }
 
+@mixin f-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 container{
   width: 1280px;
@@ -52,7 +57,7 @@ container{
   flex-direction: column;
 }
 
-@media (width<=1500px) {
+@media (width < 1500px) {
   container{
     width: 100vw;
     border-radius: 15px;
